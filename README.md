@@ -38,8 +38,6 @@ The gallery page displays information about a specific image and provides a form
 ### Styling
 The application uses Tailwind CSS for styling. Additionally, custom styles are defined in `globals.css`.
 
-### Dependencies
-- [List dependencies from package.json here]
 
 ### Contributing
 For contributions, please create a new branch, make your changes, and submit a pull request.
