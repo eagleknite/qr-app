@@ -10,7 +10,7 @@ export default function Admin({ url, setUrl, children }) {
   const [token, setToken] = useState(null);
   const [loginError, setLoginError] = useState(null);
 
-  const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+  const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 
   const handleLogin = async () => {
       try {
@@ -18,6 +18,9 @@ export default function Admin({ url, setUrl, children }) {
               username: username,
               password: password
           });
+          
+          console.log(BACKEND_URL);
+
           if (response.data && response.data.token) {
               setToken(response.data.token);
               axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
