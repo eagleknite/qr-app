@@ -18,8 +18,6 @@ export default function Admin({ url, setUrl, children }) {
               username: username,
               password: password
           });
-          
-          console.log(BACKEND_URL);
 
           if (response.data && response.data.token) {
               setToken(response.data.token);

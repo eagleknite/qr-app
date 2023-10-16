@@ -2,4 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.lottie-animation {
+    width: 540px !important;
+    /* Half of 1080 */
+    height: 540px !important;
+    /* Half of 1080 */
+}
+
 
